@@ -691,26 +691,34 @@ img {
   }
 }
 
-.technical-skills {
+.technical-skills,
+.personality,
+.tools {
   background-color: #2a3749;
   border-radius: 10px;
   padding: 20px;
 }
 
-.technical-skills .skills__title {
+.technical-skills .skills__title,
+.personality .skills__title,
+.tools .skills__title {
   color: #e4a109;
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px; /* Increased font size */
 }
 
-.technical-skills .skills__list {
+.technical-skills .skills__list,
+.personality .skills__list,
+.tools .skills__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.technical-skills .column {
+.technical-skills .column,
+.personality .column,
+.tools .column {
   display: flex;
   justify-content: center;
   width: 33.33%;
@@ -718,7 +726,9 @@ img {
   margin-bottom: 20px;
 }
 
-.technical-skills .skills__list li {
+.technical-skills .skills__list li,
+.personality .skills__list li,
+.tools .skills__list li {
   margin-bottom: 10px;
   color: #f9f9f9;
   display: flex;
@@ -726,50 +736,9 @@ img {
   font-size: 18px; /* Increased font size */
 }
 
-.technical-skills .skills__list li img {
-  width: 20px; /* Set the width to 20px */
-  height: 20px; /* Set the height to 20px */
-  object-fit: cover; /* Ensure the icon is scaled proportionally */
-  margin-right: 10px; /* Add some space between icon and text */
-}
-
-.soft-skills {
-  background-color: #2a3749;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.soft-skills .skills__title {
-  color: #e4a109;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px; /* Increased font size */
-}
-
-.soft-skills .skills__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.soft-skills .column {
-  width: 50%;
-  margin-bottom: 20px;
-  padding-left: 15px;
-  display: flex;
-  justify-content: center; /* Added this line to center the soft skills */
-}
-
-.soft-skills .skills__list li {
-  margin-bottom: 10px;
-  color: #f9f9f9;
-  display: flex;
-  align-items: center;
-  font-size: 18px; /* Increased font size */
-}
-
-.soft-skills .skills__list li img {
+.technical-skills .skills__list li img,
+.personality .skills__list li img,
+.tools .skills__list li img {
   width: 20px; /* Set the width to 20px */
   height: 20px; /* Set the height to 20px */
   object-fit: cover; /* Ensure the icon is scaled proportionally */
@@ -785,13 +754,15 @@ img {
 
 @media only screen and (max-width: 600px) {
   .technical-skills .skills__list,
-  .soft-skills .skills__list {
+  .personality .skills__list,
+  .tools .skills__list {
     flex-direction: column;
     align-items: center;
   }
 
   .technical-skills .skills__list li,
-  .soft-skills .skills__list li {
+  .personality .skills__list li,
+  .tools .skills__list li {
     font-size: 14px;
     display: flex;
     flex-direction: row; /* Change this to row */
@@ -799,14 +770,16 @@ img {
   }
 
   .technical-skills .skills__list li img,
-  .soft-skills .skills__list li img {
+  .personality .skills__list li img,
+  .tools .skills__list li img {
     width: 20px;
     height: 20px;
     margin-right: 10px; /* Add this line to add space between icon and text */
   }
 
   .technical-skills .skills__list li span,
-  .soft-skills .skills__list li span {
+  .personality .skills__list li span,
+  .tools .skills__list li span {
     text-align: center;
   }
 }
@@ -855,7 +828,7 @@ img {
 
 .zalo-icon {
   margin-top: 7px;
-  margin-left: 5px;s
+  margin-left: 5px;
 }
 
 .footer-contact {
