@@ -837,7 +837,9 @@ img {
 }
 
 .footer-social-icons {
+  display: flex;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .social-icon {
@@ -849,6 +851,11 @@ img {
 
 .social-icon:hover {
   color: #f8b24f; /* Highlight color on hover */
+}
+
+.zalo-icon {
+  margin-top: 7px;
+  margin-left: 5px;s
 }
 
 .footer-contact {
