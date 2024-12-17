@@ -430,6 +430,7 @@ img {
 
   .home__icon {
     font-size: 1.5rem; /* Reduce font size */
+    margin-left: 9.5rem;
   }
 
   .home__img {
@@ -662,7 +663,7 @@ img {
     font-size: 1.8rem;
   }
   .home__social a {
-    margin-right: 1.5rem;
+    margin-right: 6.5rem;
   }
   .home__img {
     width: max-content;
@@ -717,13 +718,20 @@ img {
 }
 
 .technical-skills .column,
-.personality .column,
 .tools .column {
   display: flex;
   justify-content: center;
   width: 33.33%;
   padding-right: 15px;
   margin-bottom: 20px;
+}
+
+.personality .column {
+  width: 50%;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .technical-skills .skills__list li,
@@ -935,9 +943,22 @@ img {
   border-color: #e4a109;
 }
 
+.project__link,
 .load-more {
   text-align: center;
   margin-top: 20px;
+}
+
+.project__download {
+  color: #ffffff;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.project__download:hover {
+  color: #e4a109;
+  border-color: #e4a109;
 }
 
 .load-more__btn {
