@@ -104,6 +104,12 @@ img {
   gap: 1.5rem;
 }
 
+.bd-flex {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
 .l-header {
   width: 100%;
   position: fixed;
@@ -340,7 +346,7 @@ img {
 .projects {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 48%;
   margin-top: 20px; /* Add this line to add space */
 }
 
