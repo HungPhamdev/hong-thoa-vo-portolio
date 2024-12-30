@@ -69,8 +69,9 @@ countAndDisplay("sql", "sql-display");
 countAndDisplay("powerbi", "powerbi-display");
 
 const projects = document.querySelectorAll(".project__item");
-const loadMoreBtn = document.getElementById("load-more");
-let currentProjectIndex = 2; // Initialize with 2 projects visible
+// const loadMoreBtn = document.getElementById("load-more");
+// let currentProjectIndex = 2; // Initialize with 2 projects visible
+let currentProjectIndex = 3; // Initialize with 3 projects visible
 
 // Hide all projects except the first 2
 projects.forEach((project, index) => {
@@ -79,17 +80,17 @@ projects.forEach((project, index) => {
   }
 });
 
-loadMoreBtn.addEventListener("click", () => {
-  // Show the next 10 projects
-  for (let i = currentProjectIndex; i < currentProjectIndex + 10; i++) {
-    if (projects[i]) {
-      projects[i].style.display = "flex";
-    }
-  }
-  currentProjectIndex += 10;
+// loadMoreBtn.addEventListener("click", () => {
+//   // Show the next 10 projects
+//   for (let i = currentProjectIndex; i < currentProjectIndex + 10; i++) {
+//     if (projects[i]) {
+//       projects[i].style.display = "flex";
+//     }
+//   }
+//   currentProjectIndex += 10;
 
-  // Hide the load more button if all projects are visible
-  if (currentProjectIndex >= projects.length) {
-    loadMoreBtn.style.display = "none";
-  }
-});
+//   // Hide the load more button if all projects are visible
+//   if (currentProjectIndex >= projects.length) {
+//     loadMoreBtn.style.display = "none";
+//   }
+// });

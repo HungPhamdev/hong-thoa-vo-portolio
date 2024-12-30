@@ -319,7 +319,7 @@ img {
 .home__icon {
   font-size: 2rem;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 0.7rem;
   color: #f9f9f9;
 }
 
@@ -330,6 +330,15 @@ img {
 
 .home__icon:focus {
   outline: 0;
+}
+
+.home__button {
+  position: relative;
+}
+
+.linkedin__icon {
+  position: absolute;
+  top: -2%;
 }
 
 .home__img {
@@ -436,7 +445,11 @@ img {
 
   .home__icon {
     font-size: 1.5rem; /* Reduce font size */
-    margin-left: 9.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .linkedin__icon {
+    top: -14%;
   }
 
   .home__img {
@@ -888,6 +901,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  margin-bottom: 20px;
 }
 
 .project__item {
